@@ -14,14 +14,8 @@
   "entrypoints": {
     "main": [
       "dev.neddslayer.sharedhealth.SharedHealth"
-    ],
-    "cardinal-components": [
-      "dev.neddslayer.sharedhealth.components.SharedComponentsInitializer"
     ]
   },
-  "mixins": [
-    "sharedhealth.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",

@@ -73,8 +73,12 @@ java {
 }
 
 jar {
+    manifest {
+        destinationDirectory.set(file("E:\\Servers\\ASMP\\mods"))
+        attributes 'Main-Class': 'dev.neddslayer.sharedhealth'
+    }
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "ServerPatcher"}
     }
 }
 
